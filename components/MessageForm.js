@@ -21,14 +21,14 @@ export default function MessageForm({ onSubmitted }) {
     <form onSubmit={handleSubmit} className="mb-8 space-y-4">
       <input
         className="w-full border p-2 rounded"
-        placeholder="Ваше имя"
+        placeholder="Your name"
         value={name}
         onChange={e => setName(e.target.value)}
         required
       />
       <textarea
         className="w-full border p-2 rounded"
-        placeholder="Ваш крик..."
+        placeholder="Your scream..."
         value={text}
         onChange={e => setText(e.target.value)}
         required
@@ -38,7 +38,7 @@ export default function MessageForm({ onSubmitted }) {
         disabled={loading}
         className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
       >
-        {loading ? 'Обработка...' : 'Оплатить $1 и крикнуть'}
+        {loading ? 'Processing...' : 'Pay $1 and scream'}
       </button>
     </form>
   )

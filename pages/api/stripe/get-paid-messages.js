@@ -1,8 +1,8 @@
 export default async function handler(req, res) {
-  // В реальном проекте тут будет Firestore или база
+  // In a real project, this would be Firestore or a database
   const dummyMessages = [
-    { name: 'Anna', text: 'Любите и живите.' },
-    { name: 'Ben', text: 'Мир всем, кто ищет смысл.' }
+    { name: 'Anna', text: 'Love and live.' },
+    { name: 'Ben', text: 'Peace to all who seek meaning.' }
   ]
   res.status(200).json(dummyMessages)
 }

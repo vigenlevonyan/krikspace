@@ -1,17 +1,17 @@
-# Krik.Space — Полный рабочий проект
+# Krik.Space — Complete Working Project
 
-## Что реализовано:
-- Stripe Checkout ($1 за сообщение)
-- Публикация сообщений после оплаты
+## What's implemented:
+- Stripe Checkout ($1 per message)
+- Message publishing after payment
 - TailwindCSS UI
-- Компонентная структура
-- Готово к деплою на Vercel
+- Component structure
+- Ready for Vercel deployment
 
-## Как запустить:
-1. Установи зависимости:
+## How to run:
+1. Install dependencies:
 npm install
 
-2. Создай .env.local на основе .env.local.example
+2. Create .env.local based on .env.local.example
 
-3. Запусти:
+3. Start:
 npm run dev
