@@ -18,17 +18,16 @@ export default function MessageForm({ onSubmitted }) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="mb-8 space-y-4">
+    <form onSubmit={handleSubmit} className="space-y-4">
       <input
-        className="w-full border p-2 rounded"
-        placeholder="Your name"
+        className="w-full border border-gray-300 p-3 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+        placeholder="Your name (optional)"
         value={name}
         onChange={e => setName(e.target.value)}
-        required
       />
       <textarea
-        className="w-full border p-2 rounded"
-        placeholder="Your scream..."
+        className="w-full border border-gray-300 p-3 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent h-32 resize-none"
+        placeholder="Write something encouraging that someone might need to hear today..."
         value={text}
         onChange={e => setText(e.target.value)}
         required
@@ -36,9 +35,9 @@ export default function MessageForm({ onSubmitted }) {
       <button
         type="submit"
         disabled={loading}
-        className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+        className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-200 font-semibold disabled:opacity-50"
       >
-        {loading ? 'Processing...' : 'Pay $1 and scream'}
+        {loading ? 'Processing...' : 'Share your message for $1'}
       </button>
     </form>
   )
